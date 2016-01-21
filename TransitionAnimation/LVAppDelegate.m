@@ -6,13 +6,13 @@
 //  Copyright © 2016年 com.github. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "LVAppDelegate.h"
 
-@interface AppDelegate ()
+@interface LVAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation LVAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

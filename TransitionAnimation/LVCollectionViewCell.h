@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  LVCollectionViewCell.h
 //  TransitionAnimation
 //
-//  Created by zhangguang on 16/1/14.
+//  Created by zhangguang on 16/1/21.
 //  Copyright © 2016年 com.github. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UICollectionViewController
-
+@interface LVCollectionViewCell : UICollectionViewCell
 
 @end
-
