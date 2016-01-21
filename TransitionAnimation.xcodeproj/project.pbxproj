@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB6156901C4F922000DB0865 /* LVCollectionViewGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DB61568F1C4F922000DB0865 /* LVCollectionViewGridLayout.m */; };
+		DB61575F1C50BF1000DB0865 /* LVDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB61575E1C50BF1000DB0865 /* LVDetailViewController.m */; };
+		DB6157621C50C59000DB0865 /* MoveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6157611C50C59000DB0865 /* MoveTransition.m */; };
+		DB6157651C50D3B600DB0865 /* LVCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6157641C50D3B600DB0865 /* LVCollectionViewCell.m */; };
 		DBCEA0B01C47AA790070620B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCEA0AF1C47AA790070620B /* main.m */; };
-		DBCEA0B31C47AA790070620B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCEA0B21C47AA790070620B /* AppDelegate.m */; };
-		DBCEA0B61C47AA790070620B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCEA0B51C47AA790070620B /* ViewController.m */; };
+		DBCEA0B31C47AA790070620B /* LVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCEA0B21C47AA790070620B /* LVAppDelegate.m */; };
+		DBCEA0B61C47AA790070620B /* LVCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCEA0B51C47AA790070620B /* LVCollectionViewController.m */; };
 		DBCEA0B91C47AA790070620B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBCEA0B71C47AA790070620B /* Main.storyboard */; };
 		DBCEA0BB1C47AA790070620B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBCEA0BA1C47AA790070620B /* Assets.xcassets */; };
 		DBCEA0BE1C47AA790070620B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBCEA0BC1C47AA790070620B /* LaunchScreen.storyboard */; };
@@ -35,12 +39,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB61568E1C4F922000DB0865 /* LVCollectionViewGridLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVCollectionViewGridLayout.h; sourceTree = "<group>"; };
+		DB61568F1C4F922000DB0865 /* LVCollectionViewGridLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVCollectionViewGridLayout.m; sourceTree = "<group>"; };
+		DB61575D1C50BF1000DB0865 /* LVDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVDetailViewController.h; sourceTree = "<group>"; };
+		DB61575E1C50BF1000DB0865 /* LVDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVDetailViewController.m; sourceTree = "<group>"; };
+		DB6157601C50C59000DB0865 /* MoveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveTransition.h; sourceTree = "<group>"; };
+		DB6157611C50C59000DB0865 /* MoveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveTransition.m; sourceTree = "<group>"; };
+		DB6157631C50D3B600DB0865 /* LVCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVCollectionViewCell.h; sourceTree = "<group>"; };
+		DB6157641C50D3B600DB0865 /* LVCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVCollectionViewCell.m; sourceTree = "<group>"; };
 		DBCEA0AB1C47AA790070620B /* TransitionAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransitionAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBCEA0AF1C47AA790070620B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DBCEA0B11C47AA790070620B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		DBCEA0B21C47AA790070620B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DBCEA0B41C47AA790070620B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DBCEA0B51C47AA790070620B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DBCEA0B11C47AA790070620B /* LVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LVAppDelegate.h; sourceTree = "<group>"; };
+		DBCEA0B21C47AA790070620B /* LVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVAppDelegate.m; sourceTree = "<group>"; };
+		DBCEA0B41C47AA790070620B /* LVCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LVCollectionViewController.h; sourceTree = "<group>"; };
+		DBCEA0B51C47AA790070620B /* LVCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVCollectionViewController.m; sourceTree = "<group>"; };
 		DBCEA0B81C47AA790070620B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBCEA0BA1C47AA790070620B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBCEA0BD1C47AA790070620B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,10 +113,18 @@
 		DBCEA0AD1C47AA790070620B /* TransitionAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				DBCEA0B11C47AA790070620B /* AppDelegate.h */,
-				DBCEA0B21C47AA790070620B /* AppDelegate.m */,
-				DBCEA0B41C47AA790070620B /* ViewController.h */,
-				DBCEA0B51C47AA790070620B /* ViewController.m */,
+				DB61568E1C4F922000DB0865 /* LVCollectionViewGridLayout.h */,
+				DB61568F1C4F922000DB0865 /* LVCollectionViewGridLayout.m */,
+				DB6157631C50D3B600DB0865 /* LVCollectionViewCell.h */,
+				DB6157641C50D3B600DB0865 /* LVCollectionViewCell.m */,
+				DBCEA0B11C47AA790070620B /* LVAppDelegate.h */,
+				DBCEA0B21C47AA790070620B /* LVAppDelegate.m */,
+				DBCEA0B41C47AA790070620B /* LVCollectionViewController.h */,
+				DBCEA0B51C47AA790070620B /* LVCollectionViewController.m */,
+				DB6157601C50C59000DB0865 /* MoveTransition.h */,
+				DB6157611C50C59000DB0865 /* MoveTransition.m */,
+				DB61575D1C50BF1000DB0865 /* LVDetailViewController.h */,
+				DB61575E1C50BF1000DB0865 /* LVDetailViewController.m */,
 				DBCEA0B71C47AA790070620B /* Main.storyboard */,
 				DBCEA0BA1C47AA790070620B /* Assets.xcassets */,
 				DBCEA0BC1C47AA790070620B /* LaunchScreen.storyboard */,
@@ -271,9 +291,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBCEA0B61C47AA790070620B /* ViewController.m in Sources */,
-				DBCEA0B31C47AA790070620B /* AppDelegate.m in Sources */,
+				DB61575F1C50BF1000DB0865 /* LVDetailViewController.m in Sources */,
+				DB6156901C4F922000DB0865 /* LVCollectionViewGridLayout.m in Sources */,
+				DB6157651C50D3B600DB0865 /* LVCollectionViewCell.m in Sources */,
+				DBCEA0B61C47AA790070620B /* LVCollectionViewController.m in Sources */,
+				DBCEA0B31C47AA790070620B /* LVAppDelegate.m in Sources */,
 				DBCEA0B01C47AA790070620B /* main.m in Sources */,
+				DB6157621C50C59000DB0865 /* MoveTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
