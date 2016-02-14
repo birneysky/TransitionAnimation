@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class LVCollectionViewCell;
+
 @interface LVCollectionViewController : UICollectionViewController
+
+@property (nonatomic,assign) LVCollectionViewCell* selectCell;
 
 @end
 

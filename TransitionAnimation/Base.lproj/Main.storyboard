@@ -14,7 +14,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="LFr-ZY-5jg" customClass="LVCollectionViewGridLayout">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="LFr-ZY-5jg">
                             <size key="itemSize" width="120" height="120"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -34,7 +34,6 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <color key="backgroundColor" red="0.7843137255" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="NIb-ry-QcY" firstAttribute="top" secondItem="fpH-Qb-174" secondAttribute="topMargin" constant="-8" id="9KC-ao-OOe"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="NIb-ry-QcY" secondAttribute="bottom" constant="-8" id="EDg-q0-HLs"/>
@@ -72,21 +71,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jSZ-d3-9w6">
-                                <rect key="frame" x="153" y="86" width="200" height="200"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jSZ-d3-9w6">
+                                <rect key="frame" x="200" y="86" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="FqV-ui-pZQ"/>
+                                    <constraint firstAttribute="width" constant="200" id="tgL-61-Gme"/>
+                                </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OcX-AD-fMg">
-                                <rect key="frame" x="98" y="294" width="321" height="215"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OcX-AD-fMg">
+                                <rect key="frame" x="140" y="294" width="321" height="215"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="321" id="79j-IQ-1yK"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OcX-AD-fMg" firstAttribute="top" secondItem="jSZ-d3-9w6" secondAttribute="bottom" constant="8" id="P8Z-WE-Sht"/>
+                            <constraint firstItem="jSZ-d3-9w6" firstAttribute="centerX" secondItem="ogu-Ol-CRC" secondAttribute="centerX" id="aHb-g5-BcA"/>
+                            <constraint firstItem="OcX-AD-fMg" firstAttribute="centerX" secondItem="ogu-Ol-CRC" secondAttribute="centerX" id="dfA-eR-W3I"/>
+                            <constraint firstItem="EdR-SI-DdN" firstAttribute="top" secondItem="OcX-AD-fMg" secondAttribute="bottom" constant="47" id="f3c-cb-Vww"/>
+                            <constraint firstItem="jSZ-d3-9w6" firstAttribute="top" secondItem="tuy-HS-Ucr" secondAttribute="bottom" constant="22" id="nmE-nY-PaH"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="jSZ-d3-9w6" id="JJo-zd-rWE"/>
+                        <outlet property="avatarImageView" destination="jSZ-d3-9w6" id="fG9-6Y-Lor"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Wz-CO-wJu" userLabel="First Responder" sceneMemberID="firstResponder"/>

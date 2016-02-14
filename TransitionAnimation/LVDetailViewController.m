@@ -9,7 +9,6 @@
 #import "LVDetailViewController.h"
 
 @interface LVDetailViewController ()
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
@@ -17,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.imageView.image = self.image;
+    //self.avatarImageView.image = self.image;
 }
 
 - (void)didReceiveMemoryWarning {

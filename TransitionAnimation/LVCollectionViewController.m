@@ -8,8 +8,9 @@
 
 #import "LVCollectionViewController.h"
 #import "LVDetailViewController.h"
+#import "MovePushTransition.h"
 
-@interface LVCollectionViewController () <UINavigationControllerDelegate>
+@interface LVCollectionViewController () <UINavigationControllerDelegate,UICollectionViewDelegateFlowLayout>
 
 @end
 
@@ -17,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationController.delegate = self;
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -35,6 +37,9 @@
                                                          fromViewController:(UIViewController *)fromVC
                                                            toViewController:(UIViewController *)toVC
 {
+    if (operation == UINavigationControllerOperationPush) {
+        return [[MovePushTransition alloc] init];
+    }
     return nil;
 }
 
@@ -52,9 +57,16 @@
     return cell;
 }
 
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewFlowLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    CGFloat cellLenght = (self.collectionView.frame.size.width - collectionViewLayout.sectionInset.left - collectionViewLayout.sectionInset.right - (4 - collectionViewLayout.minimumLineSpacing) * 1) / 4;
+    return CGSizeMake(cellLenght, cellLenght);
+}
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    self.selectCell = (LVCollectionViewCell*)[self.collectionView cellForItemAtIndexPath:indexPath];
     [self performSegueWithIdentifier:@"detail" sender:nil];
 }
 
