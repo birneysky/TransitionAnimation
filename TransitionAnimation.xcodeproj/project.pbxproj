@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB0EC0CE1C705E8500DEC8CF /* MovePopTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0EC0CD1C705E8500DEC8CF /* MovePopTransition.m */; };
 		DB6156901C4F922000DB0865 /* LVCollectionViewGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DB61568F1C4F922000DB0865 /* LVCollectionViewGridLayout.m */; };
 		DB61575F1C50BF1000DB0865 /* LVDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB61575E1C50BF1000DB0865 /* LVDetailViewController.m */; };
 		DB6157621C50C59000DB0865 /* MovePushTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6157611C50C59000DB0865 /* MovePushTransition.m */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB0EC0CC1C705E8500DEC8CF /* MovePopTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovePopTransition.h; sourceTree = "<group>"; };
+		DB0EC0CD1C705E8500DEC8CF /* MovePopTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovePopTransition.m; sourceTree = "<group>"; };
 		DB61568E1C4F922000DB0865 /* LVCollectionViewGridLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVCollectionViewGridLayout.h; sourceTree = "<group>"; };
 		DB61568F1C4F922000DB0865 /* LVCollectionViewGridLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVCollectionViewGridLayout.m; sourceTree = "<group>"; };
 		DB61575D1C50BF1000DB0865 /* LVDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVDetailViewController.h; sourceTree = "<group>"; };
@@ -123,6 +126,8 @@
 				DBCEA0B51C47AA790070620B /* LVCollectionViewController.m */,
 				DB6157601C50C59000DB0865 /* MovePushTransition.h */,
 				DB6157611C50C59000DB0865 /* MovePushTransition.m */,
+				DB0EC0CC1C705E8500DEC8CF /* MovePopTransition.h */,
+				DB0EC0CD1C705E8500DEC8CF /* MovePopTransition.m */,
 				DB61575D1C50BF1000DB0865 /* LVDetailViewController.h */,
 				DB61575E1C50BF1000DB0865 /* LVDetailViewController.m */,
 				DBCEA0B71C47AA790070620B /* Main.storyboard */,
@@ -298,6 +303,7 @@
 				DBCEA0B31C47AA790070620B /* LVAppDelegate.m in Sources */,
 				DBCEA0B01C47AA790070620B /* main.m in Sources */,
 				DB6157621C50C59000DB0865 /* MovePushTransition.m in Sources */,
+				DB0EC0CE1C705E8500DEC8CF /* MovePopTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

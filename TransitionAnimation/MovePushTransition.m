@@ -44,9 +44,10 @@
         snapshotView.frame = toVC.avatarImageView.frame;
         toVC.view.alpha = 1;
     } completion:^(BOOL finished) {
-        fromVC.selectCell.imageView.hidden = NO;
+        toVC.avatarImageView.hidden = NO;
         toVC.avatarImageView.image = toVC.image;
         [snapshotView removeFromSuperview];
+        fromVC.selectCell.imageView.hidden = NO;
         [transitionContext completeTransition:YES];
     }];
 }

@@ -7,8 +7,11 @@
 //
 
 #import "LVDetailViewController.h"
+#import "MovePopTransition.h"
 
-@interface LVDetailViewController ()
+@interface LVDetailViewController () <UINavigationControllerDelegate>
+
+@property (nonatomic,strong) UIPercentDrivenInteractiveTransition* percentDrivenTransition;
 
 @end
 
@@ -17,12 +20,72 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //self.avatarImageView.image = self.image;
+    
+    UIScreenEdgePanGestureRecognizer* edgePan = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(edgePanGesture:)];
+    edgePan.edges = UIRectEdgeLeft;
+    
+    [self.view addGestureRecognizer:edgePan];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    self.navigationController.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - *** Gesture Selector ***
+- (void)edgePanGesture:(UIScreenEdgePanGestureRecognizer*)edgePan
+{
+    CGFloat progress = [edgePan translationInView:self.view].x / self.view.bounds.size.width;
+    
+    if (UIGestureRecognizerStateBegan == edgePan.state) {
+        self.percentDrivenTransition = [[UIPercentDrivenInteractiveTransition alloc] init];
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+    else if (UIGestureRecognizerStateChanged == edgePan.state)
+    {
+        [self.percentDrivenTransition updateInteractiveTransition:progress];
+    }
+    else if (UIGestureRecognizerStateCancelled == edgePan.state || UIGestureRecognizerStateEnded == edgePan.state)
+    {
+        if (progress > 0.5) {
+            [self.percentDrivenTransition finishInteractiveTransition];
+        }
+        else
+        {
+            [self.percentDrivenTransition cancelInteractiveTransition];
+        }
+        self.percentDrivenTransition = nil;
+    }
+    
+}
+
+
+#pragma mark - *** UINavigationControllerDelegate ***
+
+- (nullable id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
+                                            animationControllerForOperation:(UINavigationControllerOperation)operation
+                                                         fromViewController:(UIViewController *)fromVC
+                                                           toViewController:(UIViewController *)toVC
+{
+    if (operation == UINavigationControllerOperationPop) {
+        return [[MovePopTransition alloc] init];
+    }
+    return nil;
+}
+
+- (nullable id <UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
+                                   interactionControllerForAnimationController:(id <UIViewControllerAnimatedTransitioning>) animationController
+{
+    return self.percentDrivenTransition;
+}
+
+
 
 /*
 #pragma mark - Navigation
