@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		742C5B3A1D9010E50054E910 /* LVCumtomCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 742C5B391D9010E50054E910 /* LVCumtomCollectionViewController.m */; };
 		DB0EC0CE1C705E8500DEC8CF /* MovePopTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0EC0CD1C705E8500DEC8CF /* MovePopTransition.m */; };
 		DB6156901C4F922000DB0865 /* LVCollectionViewGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DB61568F1C4F922000DB0865 /* LVCollectionViewGridLayout.m */; };
 		DB61575F1C50BF1000DB0865 /* LVDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB61575E1C50BF1000DB0865 /* LVDetailViewController.m */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		742C5B381D9010E50054E910 /* LVCumtomCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVCumtomCollectionViewController.h; sourceTree = "<group>"; };
+		742C5B391D9010E50054E910 /* LVCumtomCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVCumtomCollectionViewController.m; sourceTree = "<group>"; };
 		DB0EC0CC1C705E8500DEC8CF /* MovePopTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovePopTransition.h; sourceTree = "<group>"; };
 		DB0EC0CD1C705E8500DEC8CF /* MovePopTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovePopTransition.m; sourceTree = "<group>"; };
 		DB61568E1C4F922000DB0865 /* LVCollectionViewGridLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVCollectionViewGridLayout.h; sourceTree = "<group>"; };
@@ -116,6 +119,8 @@
 		DBCEA0AD1C47AA790070620B /* TransitionAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				742C5B381D9010E50054E910 /* LVCumtomCollectionViewController.h */,
+				742C5B391D9010E50054E910 /* LVCumtomCollectionViewController.m */,
 				DB61568E1C4F922000DB0865 /* LVCollectionViewGridLayout.h */,
 				DB61568F1C4F922000DB0865 /* LVCollectionViewGridLayout.m */,
 				DB6157631C50D3B600DB0865 /* LVCollectionViewCell.h */,
@@ -296,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				742C5B3A1D9010E50054E910 /* LVCumtomCollectionViewController.m in Sources */,
 				DB61575F1C50BF1000DB0865 /* LVDetailViewController.m in Sources */,
 				DB6156901C4F922000DB0865 /* LVCollectionViewGridLayout.m in Sources */,
 				DB6157651C50D3B600DB0865 /* LVCollectionViewCell.m in Sources */,
