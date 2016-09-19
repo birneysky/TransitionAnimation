@@ -9,6 +9,7 @@
 #import "LVCollectionViewController.h"
 #import "LVDetailViewController.h"
 #import "MovePushTransition.h"
+#import "LVCollectionViewCell.h"
 
 @interface LVCollectionViewController () <UINavigationControllerDelegate,UICollectionViewDelegateFlowLayout>
 
@@ -19,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+//    [self.collectionView registerClass:[LVCollectionViewCell class] forCellWithReuseIdentifier:@"ItemCell"];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -59,6 +61,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     UICollectionViewCell* cell =  [collectionView dequeueReusableCellWithReuseIdentifier:@"ItemCell" forIndexPath:indexPath];
+    //NSLog(@"cell %p",cell);
     return cell;
 }
 
