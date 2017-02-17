@@ -51,16 +51,30 @@
     {
         [self.percentDrivenTransition updateInteractiveTransition:progress];
     }
-    else if (UIGestureRecognizerStateCancelled == edgePan.state || UIGestureRecognizerStateEnded == edgePan.state)
+    else if (UIGestureRecognizerStateCancelled == edgePan.state )
     {
         if (progress > 0.5) {
             [self.percentDrivenTransition finishInteractiveTransition];
         }
         else
         {
-            [self.percentDrivenTransition cancelInteractiveTransition];
+             [self.percentDrivenTransition updateInteractiveTransition:0];
+             [self.percentDrivenTransition cancelInteractiveTransition];
         }
-        self.percentDrivenTransition = nil;
+        
+        //[self.percentDrivenTransition finishInteractiveTransition];
+       // self.percentDrivenTransition = nil;
+    }
+    else if(UIGestureRecognizerStateEnded == edgePan.state){
+//        if (progress > 0.5) {
+//            [self.percentDrivenTransition finishInteractiveTransition];
+//        }
+//        else
+//        {
+            [self.percentDrivenTransition updateInteractiveTransition:0];
+            //self.percentDrivenTransition = nil;
+            [self.percentDrivenTransition cancelInteractiveTransition];
+//        }
     }
     
 }

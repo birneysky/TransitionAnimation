@@ -39,7 +39,8 @@
     [container addSubview:snapshotView];
     
     //执行动画
-    [toVC.avatarImageView layoutIfNeeded]; //avatarImageView提前布局，以便获取到在目标控制器View中正确的位置
+    //[toVC.avatarImageView layoutIfNeeded]; //avatarImageView提前布局，以便获取到在目标控制器View中正确的位置
+    [toVC.view layoutIfNeeded];
     [UIView animateWithDuration:[self transitionDuration:transitionContext] delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         snapshotView.frame = toVC.avatarImageView.frame;
         toVC.view.alpha = 1;
